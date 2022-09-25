@@ -5,15 +5,15 @@ public class Animal {
     private int numberOfPaws;
     private boolean hasFur;
 
-    Animal(String setColor, int setNumberOfPaws, boolean setHasFur){
-         this.setColor("color");
-         this.setNumberOfPaws(0);
-         this.setHasFur(true);
+    public Animal(){}
+    public Animal (String col, int paws, boolean fur) {
+        this.color = col;
+        this.numberOfPaws = paws;
+        this.hasFur = fur;
     }
 
-
     public void getDescription() {
-        System.out.print("This animal is mostly " + getColor() + " . It has " + getNumberOfPaws());
+        System.out.print ("This animal is mostly "+ getColor() + ". It has " + getNumberOfPaws());
         if (getNumberOfPaws() == 1) {
             System.out.print(" paw ");
         } else {
